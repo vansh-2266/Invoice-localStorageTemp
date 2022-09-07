@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="form">
+        <h1>Apna Invoice</h1>
+        <div>
+            <label for="name">Party Name</label> <br>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label> <br>
+            <input type="email]" name="email" id="email">
+        </div>
+        <div>
+            <label for="mobile">Mobile</label> <br>
+            <input type="number" name="number" id="number">
+        </div>
+        <div>
+            <label for="start">Start date:</label>
+            <input type="date" id="Date" name="trip-start" value=" " min="1900-01-01" max="2045-12-31">
+        </div>
+        <div>
+            <label for="productName">Product Name</label>
+            <select name="Pname" id="Pname">
+                <option value=" ">Select Products</option>
+                <option value="Product1">Product1</option>
+                <option value="Product2">Product2</option>
+                <option value="Product3">Product3</option>
+                <option value="Product4">Product4</option>
+                <option value="Product5">Product5</option>
+                <option value="Product6">Product6</option>
+            </select>
+        </div>
+        <div>
+            <label for="Quantity">Quantity</label> <br>
+            <input type="number" name="Quantity" id="Quantity">
+        </div>
+        <div>
+            <label for="Quantity">Price (Of Each)</label> <br>
+            <input type="number" name="Price" id="Price">
+        </div>
+
+        <div>
+            <label for="CGST">CGST Amount</label> <br>
+            <input type="number" name="CGST" id="CGST">
+        </div>
+        <div>
+            <label for="SGST">SGST Amount</label> <br>
+            <input type="number" name="SGST" id="SGST">
+        </div>
+
+        <div id="totalAmount" >
+
+        </div>
+
+
+        <div id="button-row">
+            <div class="button">
+                <button type="submit" id="send">Send</button>
+            </div>
+            <div class="button">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
